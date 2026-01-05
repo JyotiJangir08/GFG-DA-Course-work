@@ -1,0 +1,84 @@
+# int = number
+print(12)
+# float = decimal numbers 
+print(5.55)
+# string = characters , alphanumeric , everything written in  double quotos
+print ("jyoti" , True, False, "jangir", 10 , 0.5)
+# boolean = true and false 
+print(True, False,)
+print()
+print()
+# print fn with multiple parameters
+print(True, False, "jangir", 10 , 0.5)
+print(type(34))
+print()
+print()
+# 1. Arithmetic operator
+
+print(10+ 5)
+print(10-5)
+print(10*5)
+print(10/5)
+print(10%5)
+print(10//5)
+print(10**5)
+print()
+print(10*'-')
+print(10*'j')
+print(10+True)
+print(10**True)
+print('jyoti'+' '+ 'jangir')
+print(True+True)
+
+# 2. comparison operator
+print(10>5)
+print(10>=5)
+print(10<5)
+print(10<=5)
+print(10==5)
+print(10!=5)
+print(10*'--')
+print('a'> 'A')
+# this is beacause of the ASCII code of every number 
+# logical operators 
+# and 
+print(10>5 and 10<15)
+# or
+# not 
+
+# 3.typecasting ( converting something )
+print(int(15.456783))
+print(int(True))
+print(int('10'))
+print(10*'-')
+print(bool(7909090786))
+print(bool(0))
+print(bool(-789966))
+print(bool(''))
+print(10*'-')
+print(str(9))
+print(str('street'))
+a=17
+b=5
+print(a>b)
+print(a>=b)
+print(a<b)
+print(a<=b)
+print(a==b)
+print(a!=b)
+print(50*'+')
+print(a)
+print(a-5)
+a=a*2
+print(a)
+print(50*'+')
+age=123
+if age>=0 and age<18:
+    print('underage')
+elif age >100:
+    print('person does not exist')
+print(age>=18 and age<=100)
+if age >= 18 and age<=100:
+    print('eligible')
+else:
+    print('not eligible')
