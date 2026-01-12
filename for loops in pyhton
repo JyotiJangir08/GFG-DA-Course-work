@@ -1,0 +1,96 @@
+# nested if
+# to check if this is a leap year
+yr = 2014
+if ((yr%4 == 0) and (yr%100 !=0)) or (yr%400 == 0):
+    print('leap')
+else:
+    print('not a leap year')
+print(20*'*')
+
+# check if number is positive , if yes then check it is even or not .
+num = -15
+if num > 0 :
+    if num %2 == 0:
+        print('even')
+    else:
+        print('odd')
+else :
+    print('-ve')
+print(10*'>')
+
+# loops
+num = 13
+for i in range(1,11):
+    print(num,'x',i,'=', i*num)
+print(20*'&')
+
+for i in range(2,21,2):
+    print(num, 'x', i, '=', i*num)
+for i in range(num, (num*10)+1 , num ):
+    print(i)
+ 
+# in reverse 
+for i in range(10,1,-1):
+    print(i)
+
+num ='7'
+for i in range(1, 7):
+    print('*'*i)
+print(10*'+')
+
+# *
+# * *
+# * * *
+# * * * *
+# * * * * *
+num=10
+for i in range (1 , num+1):
+    print('* '*i)
+print('&'*10)
+# * * * * *
+# * * * * 
+# * * * 
+# * * 
+# * 
+num = 5
+for i in range(num , 0, -1):
+    print('* '*i)
+print(10*'#')
+num = 10 
+for i in range(num):
+    print('* '*num)
+#               *
+#           *   *
+#       *   *   *
+#    *  *   *   *
+# *  *  *   *   *
+num = 5 
+for i in range(0, num-1):
+    print(' *'*i )
+print('&'*10)
+
+
+num = 25
+isPrime = True
+for i in range(2, num):
+    if num%i ==0:
+        isPrime = False   
+num = 5 
+if (num%1 == 0) and (num%num == 0):
+    print ('Prime')
+else :
+    print('not Prime')
+
+print('*'*20)
+counter = 0
+for num in range(1,101):
+  val = True 
+
+for i in range(2,num):
+    if num%i == 0:
+        val = False
+        
+if val:
+    print(num ,'is prime')
+else:
+    print(num ,'is not prime')
