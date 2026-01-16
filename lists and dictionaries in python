@@ -1,0 +1,100 @@
+# DSA (data structure and algorythem)
+# lists and dictionaries
+
+#lists
+
+lst = [1,2,3,4,5,6,7],[5,6,7,8,9]
+print(lst)
+print(len(lst))
+print(lst[1][4])
+student = [101,'jyoti','jaipur',5678900, 'DA-13']
+student.append(10)
+print(student)
+
+# to print all a list of all the even numbers from 1-100
+lst = []
+for i in range(2,100,2):
+    lst.append(i)
+    
+print(lst)
+# as list comprehensions
+print([i for i in range(2,100,2)])
+
+lst = [[1,2,3],
+       [4,5,6],
+       [7,8,9]]
+print(len(lst))       
+print(lst[0][1])   
+
+for i in range(len(lst)):
+    print(lst[i])
+    
+for i in range(len(lst)):
+    print('-',lst[i])
+    for j in range(len(lst[i])):
+        print(lst[i][j])
+# how many elements are there in list
+c = 0
+for i in range(len(lst)):
+    for j in range(len(lst[i])):
+        c += 1
+print(c)
+# find the sum of all the elements of a list 
+s = 0
+for i in range(len(lst)):
+    for j in range(len(lst[i])):
+        s += lst[i][j]
+print(s)
+# sum of all the elements row wise in a list
+for i in range(len(lst)):
+    s = 0
+    for j in range(len(lst[i])):
+        s += lst[i][j]
+    print(s)
+# check is list is square or not 
+rows = len(lst)
+for i in range(len(lst)):
+    if lst[i] == rows:
+        print(lst[i]) # check is list is square or not
+
+
+lst = [[1,2,3],
+       [4,5,6],
+       [7,8,9]]
+
+rows = len(lst)
+isSquare = True
+for i in range(len(lst)):
+    if len(lst[i]) != rows:
+        isSquare = False
+        break 
+if isSquare :
+    print('Square Matrix')
+else:
+    print('Not Matrix')
+# remove all the elements in a list that are even
+lst_clean = []
+
+for i in range(len(lst)):
+    
+    lst_ = []
+    for j in range(len(lst[i])):
+        if lst[i][j]%2 == 0:
+            lst_.append(lst[i][j])
+    lst_clean.append((lst_))
+        
+print(lst_clean)   lst = [[1 , 'jyoti' , 'jaipur', 3456778893 , 'DA-13' , 78],
+       [2 , 'jangir', 'jaipur', 4573984787 , 'DA-13' , 67]]
+# for average 
+s = 0 
+for i in range(len(lst)):
+     s += lst[i][-1]
+print(s/len(lst))
+
+# for finding 
+roll_no = int(input('enter the roll no :'))
+
+s = 0 
+for i in range(len(lst)):
+     if(lst[i][0] == roll_no):
+        print(lst[i][3])
