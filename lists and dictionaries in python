@@ -98,3 +98,24 @@ s = 0
 for i in range(len(lst)):
      if(lst[i][0] == roll_no):
         print(lst[i][3])
+# Dictionaries
+dct = {1 : 'jyoti' , 2 : 'kumari' , 3 : 'jangir'}
+dct[4] = 'jaipur'
+print(dct)
+
+dct_name     = {101 : 'jyoti' , 102 : 'kumari' , 103 : 'jangir'}
+dct_location = {101 : 'jaipur' , 102 : 'jjnu', 103 : 'raj'}
+
+print(dct_name[101])
+print(dct_location[101])
+
+data = {
+        101 : {'name' : 'jyoti', 'section' : 'DA-13', 'phone_no' : [3455666777 , 5678887766] },
+        102 : {'name' : 'jyoti', 'section' : 'DA-13', 'phone_no' : [3455666777 , 556777665445 , 5667889998 ]},
+        103 : {'name' : 'jyoti', 'section' : 'DA-13', 'phone_no' : 3455666777 }
+    }
+
+roll_no = int(input('enter the roll no :'))
+print(data[roll_no]['name'])
+print(data[roll_no]['section'])
+print(data[roll_no]['phone_no'])
